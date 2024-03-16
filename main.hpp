@@ -1,7 +1,12 @@
 /***************************************************
  * Code your program here
  ***************************************************/
+#ifndef MAIN_HPP
+#define MAIN_HPP
 
+#include <iostream>
+#include <fstream>
+#include <string>
 int writeFile(const std::string& filename) {
     std::ofstream file(filename);
     if (!file.is_open()) {
@@ -52,3 +57,4 @@ int readFile(const std::string& filename) {
     file.close();
     return numEmployees;
 }
+#endif
