@@ -1,5 +1,6 @@
 #include "main.hpp"
-
+#include <string>
+#include <iostream>
 
 int main()
 {
