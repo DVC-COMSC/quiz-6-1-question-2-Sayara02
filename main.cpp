@@ -7,13 +7,15 @@
 int main()
 {
 
-    string filename;
+    std::string filename = 
     int empN;
 
     filename = "employee.txt";
     empN = writeFile(filename);
-    cout << "File created with " << empN << " employee records\n";
+    std::cout << "File created with " << empN << " employee records\n" << std::endl;
 
     empN = readFile(filename);
-    cout << "The total number of employess read " << empN << endl;
+    std::cout << "The total number of employess read " << empN << std::endl;
+    return 0;
+
 }
